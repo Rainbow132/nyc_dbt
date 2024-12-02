@@ -8,7 +8,7 @@ sources:  # 声明数据源
       - name: yellow_taxi_trips_in  # 黄色出租车数据表
       - name: green_taxi_trips_in   # 绿色出租车数据表
       - name: fhv_taxi_trips_in     # 网约车数据表
-      - name: taxi_zone_lookup    # 地理位置信息表
+      - name: taxi_zone_lookup_in    # 地理位置信息表
 models:
   - name: stg_yellow_tripdata
     description: "暂存黄色出租车数据"
@@ -51,7 +51,7 @@ models:
         description: "车费金额"
         tests:
           - not_null  # 确保fare_amount不为空 
-  - name: dim_zones
+  - name: stg_taxi_zone_lookup
     columns:
       - name: locationid
         tests:

@@ -2,8 +2,9 @@
 {{ config(materialized='view') }}
 
 select
-    cast(locationid as integer) as locationid,
+    locationid,
     borough,
     zone,
     replace(service_zone, 'Boro', 'Green') as service_zone
-from {{ source('nyc_taxi', 'taxi_zone_lookup') }}
+from {{ source('nyc_taxi', 'taxi_zone_lookup_in') }}
+

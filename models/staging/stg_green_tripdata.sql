@@ -4,26 +4,33 @@
 select
     -- 标识符
     {{ dbt_utils.generate_surrogate_key(['vendorid', 'lpep_pickup_datetime']) }} as tripid,
-    cast(vendorid as integer) as vendor_id,
+    cast(vendorid as bigint) as vendor_id,
     'Green' as service_type,
     
     -- 时间戳
-    cast(lpep_pickup_datetime as timestamp) as pickup_datetime,
-    cast(lpep_dropoff_datetime as timestamp) as dropoff_datetime,
+    cast(lpep_pickup_datetime as datetime) as pickup_datetime,
+    cast(lpep_dropoff_datetime as datetime) as dropoff_datetime,
     
-    -- 行程信息
-    cast(passenger_count as integer) as passenger_count,
-    cast(trip_distance as numeric) as trip_distance,
-    cast(ratecodeid as integer) as ratecode_id,
+    -- trip info
+    cast(store_and_fwd_flag as string) as store_and_fwd_flag,
+    cast(ratecodeid as bigint) as ratecode_id,
+    cast(passenger_count as bigint) as passenger_count,
+    cast(trip_distance as double) as trip_distance,
     
-    -- 位置信息
-    cast(pulocationid as integer) as pickup_locationid,
-    cast(dolocationid as integer) as dropoff_locationid,
+    -- location info
+    cast(pulocationid as bigint) as pickup_locationid,
+    cast(dolocationid as bigint) as dropoff_locationid,
     
-    -- 支付信息
-    cast(payment_type as integer) as payment_type,
-    cast(fare_amount as numeric) as fare_amount,
-    cast(total_amount as numeric) as total_amount
-
+    -- payment info
+    cast(payment_type as bigint) as payment_type,
+    cast(fare_amount as double) as fare_amount,
+    cast(extra as double) as extra,
+    cast(mta_tax as double) as mta_tax,
+    cast(tip_amount as double) as tip_amount,
+    cast(tolls_amount as double) as tolls_amount,
+    cast(improvement_surcharge as double) as improvement_surcharge,
+    cast(total_amount as double) as total_amount,
+    cast(congestion_surcharge as double) as congestion_surcharge
+    
 from {{ source('nyc_taxi', 'green_taxi_trips_in') }}
 where extract(year from lpep_pickup_datetime) in (2019, 2020)
