@@ -193,3 +193,224 @@ from source_data
 [0m15:17:43.329605 [debug] [MainThread]: Connection 'debug' was properly closed.
 [0m15:17:43.329605 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000152118375B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001522E32AAF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001522E3D5610>]}
 [0m15:17:43.330582 [debug] [MainThread]: Flushing usage events
+[0m21:00:15.805189 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C14847520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C1745D490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C1745D340>]}
+
+
+============================== 21:00:15.810190 | a0ed5aeb-8519-4144-9e4b-4b27bf7557bd ==============================
+[0m21:00:15.810190 [info ] [MainThread]: Running with dbt=1.8.9
+[0m21:00:15.811191 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\杰哥带帅比\\.dbt', 'log_path': 'E:\\程序\\data-engineering-zoomcamp-main\\04-analytics-engineering\\homework\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt deps', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m21:00:16.063055 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a0ed5aeb-8519-4144-9e4b-4b27bf7557bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C174B4E20>]}
+[0m21:00:16.104055 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m21:00:16.106086 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m21:00:16.109084 [debug] [MainThread]: Command `dbt deps` succeeded at 21:00:16.108086 after 0.37 seconds
+[0m21:00:16.109084 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C14847520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C14C16A60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C17555850>]}
+[0m21:00:16.110124 [debug] [MainThread]: Flushing usage events
+[0m21:00:16.160081 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m21:01:53.678616 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029E9C7F7580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029E9F41B610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029E9F41B4C0>]}
+
+
+============================== 21:01:53.683580 | 8c51cae4-b619-492d-8e1d-dbb00b96569e ==============================
+[0m21:01:53.683580 [info ] [MainThread]: Running with dbt=1.8.9
+[0m21:01:53.684577 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'E:\\程序\\data-engineering-zoomcamp-main\\04-analytics-engineering\\homework\\logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\杰哥带帅比\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --full-refresh', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m21:01:55.769020 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8c51cae4-b619-492d-8e1d-dbb00b96569e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029EB92FE0A0>]}
+[0m21:01:55.893068 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8c51cae4-b619-492d-8e1d-dbb00b96569e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029EB930AC10>]}
+[0m21:01:55.894071 [info ] [MainThread]: Registered adapter: maxcompute=1.8.0-alpha8
+[0m21:01:56.666225 [debug] [MainThread]: checksum: 132857a23e9d07220246854f7763165174ce9b737cfc7867629ace4294e520b1, vars: {}, profile: , target: , version: 1.8.9
+[0m21:01:56.900224 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 6 files added, 1 files changed.
+[0m21:01:56.901224 [debug] [MainThread]: Partial parsing: added file: homework://models\staging\stg_yellow_tripdata.sql
+[0m21:01:56.901224 [debug] [MainThread]: Partial parsing: added file: homework://models\core\fact_trips.sql
+[0m21:01:56.902224 [debug] [MainThread]: Partial parsing: added file: homework://models\staging\stg_green_tripdata.sql
+[0m21:01:56.902224 [debug] [MainThread]: Partial parsing: added file: homework://models\staging\base_homework_yellow_taxi_trips_in.sql
+[0m21:01:56.903223 [debug] [MainThread]: Partial parsing: added file: homework://models\overview.md
+[0m21:01:56.904222 [debug] [MainThread]: Partial parsing: added file: homework://models\staging\stg_fhv_tripdata.sql
+[0m21:01:56.904222 [debug] [MainThread]: Partial parsing: updated file: homework://models\staging\schema.yml
+[0m21:01:57.223525 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Invalid sources config given in models\staging\schema.yml @ sources: {'name': 'stg_yellow_tripdata', 'columns': [{'name': 'tripid', 'tests': ['unique', 'not_null']}, {'name': 'pickup_datetime', 'tests': ['not_null']}]} - at path []: Additional properties are not allowed ('columns' was unexpected)
+[0m21:01:57.225487 [debug] [MainThread]: Command `dbt run` failed at 21:01:57.225487 after 3.60 seconds
+[0m21:01:57.226488 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029E9C7F7580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029EBA846C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029EBA7C1AC0>]}
+[0m21:01:57.227488 [debug] [MainThread]: Flushing usage events
+[0m21:01:57.248094 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m21:07:59.004763 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019DE5587580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019DE81AB610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019DE81AB4C0>]}
+
+
+============================== 21:07:59.008740 | 70971eec-a228-4c60-908b-868d22d6b0b2 ==============================
+[0m21:07:59.008740 [info ] [MainThread]: Running with dbt=1.8.9
+[0m21:07:59.011175 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\杰哥带帅比\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'E:\\程序\\data-engineering-zoomcamp-main\\04-analytics-engineering\\homework\\logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --full-refresh', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m21:08:00.495369 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '70971eec-a228-4c60-908b-868d22d6b0b2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019D8208E0A0>]}
+[0m21:08:00.609020 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '70971eec-a228-4c60-908b-868d22d6b0b2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019D8209AC10>]}
+[0m21:08:00.610020 [info ] [MainThread]: Registered adapter: maxcompute=1.8.0-alpha8
+[0m21:08:01.357662 [debug] [MainThread]: checksum: 132857a23e9d07220246854f7763165174ce9b737cfc7867629ace4294e520b1, vars: {}, profile: , target: , version: 1.8.9
+[0m21:08:01.587838 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 6 files added, 1 files changed.
+[0m21:08:01.588884 [debug] [MainThread]: Partial parsing: added file: homework://models\overview.md
+[0m21:08:01.589837 [debug] [MainThread]: Partial parsing: added file: homework://models\staging\stg_yellow_tripdata.sql
+[0m21:08:01.589837 [debug] [MainThread]: Partial parsing: added file: homework://models\staging\stg_green_tripdata.sql
+[0m21:08:01.590837 [debug] [MainThread]: Partial parsing: added file: homework://models\core\fact_trips.sql
+[0m21:08:01.590837 [debug] [MainThread]: Partial parsing: added file: homework://models\staging\base_homework_yellow_taxi_trips_in.sql
+[0m21:08:01.591838 [debug] [MainThread]: Partial parsing: added file: homework://models\staging\stg_fhv_tripdata.sql
+[0m21:08:01.591838 [debug] [MainThread]: Partial parsing: updated file: homework://models\staging\schema.yml
+[0m21:08:01.898879 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Invalid sources config given in models\staging\schema.yml @ sources: {'name': 'stg_green_tripdata', 'columns': [{'name': 'tripid', 'tests': ['unique', 'not_null']}, {'name': 'pickup_datetime', 'tests': ['not_null']}]} - at path []: Additional properties are not allowed ('columns' was unexpected)
+[0m21:08:01.901879 [debug] [MainThread]: Command `dbt run` failed at 21:08:01.901879 after 2.96 seconds
+[0m21:08:01.902878 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019DE5587580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019D835D6C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019D83551AC0>]}
+[0m21:08:01.903878 [debug] [MainThread]: Flushing usage events
+[0m21:08:01.922261 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m21:10:21.237555 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207D2FA7580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207D5BCB610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207D5BCB4C0>]}
+
+
+============================== 21:10:21.240551 | ddcb7647-c2a8-49da-b689-d4cf6125f6e3 ==============================
+[0m21:10:21.240551 [info ] [MainThread]: Running with dbt=1.8.9
+[0m21:10:21.242552 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\杰哥带帅比\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'E:\\程序\\data-engineering-zoomcamp-main\\04-analytics-engineering\\homework\\logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run --full-refresh', 'send_anonymous_usage_stats': 'True'}
+[0m21:10:22.778684 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ddcb7647-c2a8-49da-b689-d4cf6125f6e3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207EFAAE0A0>]}
+[0m21:10:22.910628 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ddcb7647-c2a8-49da-b689-d4cf6125f6e3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207EFABAC10>]}
+[0m21:10:22.911630 [info ] [MainThread]: Registered adapter: maxcompute=1.8.0-alpha8
+[0m21:10:23.647217 [debug] [MainThread]: checksum: 132857a23e9d07220246854f7763165174ce9b737cfc7867629ace4294e520b1, vars: {}, profile: , target: , version: 1.8.9
+[0m21:10:23.874480 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 6 files added, 1 files changed.
+[0m21:10:23.874480 [debug] [MainThread]: Partial parsing: added file: homework://models\staging\base_homework_yellow_taxi_trips_in.sql
+[0m21:10:23.875480 [debug] [MainThread]: Partial parsing: added file: homework://models\staging\stg_green_tripdata.sql
+[0m21:10:23.875480 [debug] [MainThread]: Partial parsing: added file: homework://models\overview.md
+[0m21:10:23.876479 [debug] [MainThread]: Partial parsing: added file: homework://models\core\fact_trips.sql
+[0m21:10:23.876479 [debug] [MainThread]: Partial parsing: added file: homework://models\staging\stg_yellow_tripdata.sql
+[0m21:10:23.877480 [debug] [MainThread]: Partial parsing: added file: homework://models\staging\stg_fhv_tripdata.sql
+[0m21:10:23.877480 [debug] [MainThread]: Partial parsing: updated file: homework://models\staging\schema.yml
+[0m21:10:24.163338 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `tests` config has been renamed to `data_tests`. Please see
+https://docs.getdbt.com/docs/build/data-tests#new-data_tests-syntax for more
+information.
+[0m21:10:24.164338 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'ddcb7647-c2a8-49da-b689-d4cf6125f6e3', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207F0F89A90>]}
+[0m21:10:24.390293 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.homework.base_homework_yellow_taxi_trips_in' (models\staging\base_homework_yellow_taxi_trips_in.sql) depends on a source named 'homework.yellow_taxi_trips_in' which was not found
+[0m21:10:24.394293 [debug] [MainThread]: Command `dbt run` failed at 21:10:24.393292 after 3.22 seconds
+[0m21:10:24.394293 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207D2FA7580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207F124B520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207F124BCD0>]}
+[0m21:10:24.395292 [debug] [MainThread]: Flushing usage events
+[0m21:10:24.412400 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m21:12:10.343632 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F567CD75B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F56A90B640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F56A90B4F0>]}
+
+
+============================== 21:12:10.348053 | cb0a5693-83a9-4c62-b7a6-48a003e854c5 ==============================
+[0m21:12:10.348053 [info ] [MainThread]: Running with dbt=1.8.9
+[0m21:12:10.349118 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'E:\\程序\\data-engineering-zoomcamp-main\\04-analytics-engineering\\homework\\logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\杰哥带帅比\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --full-refresh', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m21:12:11.860256 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cb0a5693-83a9-4c62-b7a6-48a003e854c5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5680AA940>]}
+[0m21:12:11.979236 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'cb0a5693-83a9-4c62-b7a6-48a003e854c5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F56A8C0790>]}
+[0m21:12:11.981236 [info ] [MainThread]: Registered adapter: maxcompute=1.8.0-alpha8
+[0m21:12:12.723571 [debug] [MainThread]: checksum: 132857a23e9d07220246854f7763165174ce9b737cfc7867629ace4294e520b1, vars: {}, profile: , target: , version: 1.8.9
+[0m21:12:12.984152 [debug] [MainThread]: Partial parsing enabled: 1 files deleted, 6 files added, 1 files changed.
+[0m21:12:12.985151 [debug] [MainThread]: Partial parsing: added file: homework://models\staging\stg_green_tripdata.sql
+[0m21:12:12.985151 [debug] [MainThread]: Partial parsing: added file: homework://models\staging\stg_yellow_tripdata.sql
+[0m21:12:12.986153 [debug] [MainThread]: Partial parsing: added file: homework://models\staging\stg_fhv_tripdata.sql
+[0m21:12:12.986153 [debug] [MainThread]: Partial parsing: added file: homework://models\core\fact_trips.sql
+[0m21:12:12.987190 [debug] [MainThread]: Partial parsing: added file: homework://models\overview.md
+[0m21:12:12.987190 [debug] [MainThread]: Partial parsing: added file: homework://models\staging\base_homework_yellow_taxi_trips_in.sql
+[0m21:12:12.988194 [debug] [MainThread]: Partial parsing: updated file: homework://models\staging\schema.yml
+[0m21:12:12.989196 [debug] [MainThread]: Partial parsing: deleted file: homework://models\example\my_first_dbt_model.sql
+[0m21:12:13.285775 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `tests` config has been renamed to `data_tests`. Please see
+https://docs.getdbt.com/docs/build/data-tests#new-data_tests-syntax for more
+information.
+[0m21:12:13.287774 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'cb0a5693-83a9-4c62-b7a6-48a003e854c5', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F505CB8880>]}
+[0m21:12:13.504774 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'my_first_dbt_model' in the 'models' section of file 'models\example\schema.yml'
+[0m21:12:13.523775 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.homework.stg_green_tripdata' (models\staging\stg_green_tripdata.sql) depends on a source named 'nyc_taxi.green_taxi_trips_in' which was not found
+[0m21:12:13.526774 [debug] [MainThread]: Command `dbt run` failed at 21:12:13.526774 after 3.25 seconds
+[0m21:12:13.527775 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F567CD75B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F505FB8820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F505FB8430>]}
+[0m21:12:13.527775 [debug] [MainThread]: Flushing usage events
+[0m21:12:13.547658 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m21:14:04.413525 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5B5C37520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5B885B580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5B885B430>]}
+
+
+============================== 21:14:04.416989 | e302bea4-567f-4694-82ad-aaf6a3836c3a ==============================
+[0m21:14:04.416989 [info ] [MainThread]: Running with dbt=1.8.9
+[0m21:14:04.417990 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\杰哥带帅比\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'E:\\程序\\data-engineering-zoomcamp-main\\04-analytics-engineering\\homework\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt run --full-refresh', 'send_anonymous_usage_stats': 'True'}
+[0m21:14:06.188849 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e302bea4-567f-4694-82ad-aaf6a3836c3a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5D273ADC0>]}
+[0m21:14:06.317844 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e302bea4-567f-4694-82ad-aaf6a3836c3a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5D2845E20>]}
+[0m21:14:06.318840 [info ] [MainThread]: Registered adapter: maxcompute=1.8.0-alpha8
+[0m21:14:07.104062 [debug] [MainThread]: checksum: 132857a23e9d07220246854f7763165174ce9b737cfc7867629ace4294e520b1, vars: {}, profile: , target: , version: 1.8.9
+[0m21:14:07.324418 [debug] [MainThread]: Partial parsing enabled: 1 files deleted, 6 files added, 1 files changed.
+[0m21:14:07.325461 [debug] [MainThread]: Partial parsing: added file: homework://models\staging\base_homework_yellow_taxi_trips_in.sql
+[0m21:14:07.325461 [debug] [MainThread]: Partial parsing: added file: homework://models\core\fact_trips.sql
+[0m21:14:07.326455 [debug] [MainThread]: Partial parsing: added file: homework://models\staging\stg_green_tripdata.sql
+[0m21:14:07.326455 [debug] [MainThread]: Partial parsing: added file: homework://models\overview.md
+[0m21:14:07.327455 [debug] [MainThread]: Partial parsing: added file: homework://models\staging\stg_fhv_tripdata.sql
+[0m21:14:07.327455 [debug] [MainThread]: Partial parsing: added file: homework://models\staging\stg_yellow_tripdata.sql
+[0m21:14:07.328456 [debug] [MainThread]: Partial parsing: updated file: homework://models\staging\schema.yml
+[0m21:14:07.328456 [debug] [MainThread]: Partial parsing: deleted file: homework://models\example\my_first_dbt_model.sql
+[0m21:14:07.612491 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `tests` config has been renamed to `data_tests`. Please see
+https://docs.getdbt.com/docs/build/data-tests#new-data_tests-syntax for more
+information.
+[0m21:14:07.614493 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'e302bea4-567f-4694-82ad-aaf6a3836c3a', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5D27815B0>]}
+[0m21:14:07.837886 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'my_first_dbt_model' in the 'models' section of file 'models\example\schema.yml'
+[0m21:14:07.857886 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.homework.base_homework_yellow_taxi_trips_in' (models\staging\base_homework_yellow_taxi_trips_in.sql) depends on a source named 'homework.yellow_taxi_trips_in' which was not found
+[0m21:14:07.859888 [debug] [MainThread]: Command `dbt run` failed at 21:14:07.859888 after 3.52 seconds
+[0m21:14:07.860889 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5B5C37520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5D3C09D60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5D3C868E0>]}
+[0m21:14:07.861887 [debug] [MainThread]: Flushing usage events
+[0m21:14:07.880455 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m21:14:48.726101 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D2BF0875B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D2C1CAB640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D2C1CAB4F0>]}
+
+
+============================== 21:14:48.730067 | 33117c84-a1f1-45a0-9ceb-daa0e19d5206 ==============================
+[0m21:14:48.730067 [info ] [MainThread]: Running with dbt=1.8.9
+[0m21:14:48.731071 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'E:\\程序\\data-engineering-zoomcamp-main\\04-analytics-engineering\\homework\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\杰哥带帅比\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --full-refresh', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m21:14:50.237105 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '33117c84-a1f1-45a0-9ceb-daa0e19d5206', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D2BF45A940>]}
+[0m21:14:50.352784 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '33117c84-a1f1-45a0-9ceb-daa0e19d5206', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D2C1C60790>]}
+[0m21:14:50.353782 [info ] [MainThread]: Registered adapter: maxcompute=1.8.0-alpha8
+[0m21:14:51.093007 [debug] [MainThread]: checksum: 132857a23e9d07220246854f7763165174ce9b737cfc7867629ace4294e520b1, vars: {}, profile: , target: , version: 1.8.9
+[0m21:14:51.313619 [debug] [MainThread]: Partial parsing enabled: 1 files deleted, 5 files added, 1 files changed.
+[0m21:14:51.314622 [debug] [MainThread]: Partial parsing: added file: homework://models\staging\stg_green_tripdata.sql
+[0m21:14:51.314622 [debug] [MainThread]: Partial parsing: added file: homework://models\staging\stg_fhv_tripdata.sql
+[0m21:14:51.315619 [debug] [MainThread]: Partial parsing: added file: homework://models\overview.md
+[0m21:14:51.315619 [debug] [MainThread]: Partial parsing: added file: homework://models\staging\stg_yellow_tripdata.sql
+[0m21:14:51.316619 [debug] [MainThread]: Partial parsing: added file: homework://models\core\fact_trips.sql
+[0m21:14:51.316619 [debug] [MainThread]: Partial parsing: updated file: homework://models\staging\schema.yml
+[0m21:14:51.317617 [debug] [MainThread]: Partial parsing: deleted file: homework://models\example\my_first_dbt_model.sql
+[0m21:14:51.600500 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `tests` config has been renamed to `data_tests`. Please see
+https://docs.getdbt.com/docs/build/data-tests#new-data_tests-syntax for more
+information.
+[0m21:14:51.601501 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '33117c84-a1f1-45a0-9ceb-daa0e19d5206', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D2DCF945B0>]}
+[0m21:14:51.818877 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'my_first_dbt_model' in the 'models' section of file 'models\example\schema.yml'
+[0m21:14:51.836880 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.homework.fact_trips' (models\core\fact_trips.sql) depends on a node named 'dim_zones' which was not found
+[0m21:14:51.839878 [debug] [MainThread]: Command `dbt run` failed at 21:14:51.839878 after 3.17 seconds
+[0m21:14:51.840878 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D2BF0875B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D2DD0442E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D2DD10B9A0>]}
+[0m21:14:51.841875 [debug] [MainThread]: Flushing usage events
+[0m21:14:51.865702 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m21:32:37.919635 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2260D7580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A228CFC610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A228CFC4C0>]}
+
+
+============================== 21:32:37.923635 | a9161cdf-138a-4277-88c6-4e225c1e250b ==============================
+[0m21:32:37.923635 [info ] [MainThread]: Running with dbt=1.8.9
+[0m21:32:37.924638 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'E:\\程序\\data-engineering-zoomcamp-main\\04-analytics-engineering\\homework\\logs', 'profiles_dir': 'C:\\Users\\杰哥带帅比\\.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run --full-refresh', 'send_anonymous_usage_stats': 'True'}
+[0m21:32:39.478621 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a9161cdf-138a-4277-88c6-4e225c1e250b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A242BDE0A0>]}
+[0m21:32:39.613109 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a9161cdf-138a-4277-88c6-4e225c1e250b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A242BEAC10>]}
+[0m21:32:39.615108 [info ] [MainThread]: Registered adapter: maxcompute=1.8.0-alpha8
+[0m21:32:40.389733 [debug] [MainThread]: checksum: 132857a23e9d07220246854f7763165174ce9b737cfc7867629ace4294e520b1, vars: {}, profile: , target: , version: 1.8.9
+[0m21:32:40.619416 [debug] [MainThread]: Partial parsing enabled: 1 files deleted, 7 files added, 1 files changed.
+[0m21:32:40.620415 [debug] [MainThread]: Partial parsing: added file: homework://models\staging\stg_taxi_zone_lookup.sql
+[0m21:32:40.620415 [debug] [MainThread]: Partial parsing: added file: homework://models\overview.md
+[0m21:32:40.621416 [debug] [MainThread]: Partial parsing: added file: homework://models\staging\stg_fhv_tripdata.sql
+[0m21:32:40.621416 [debug] [MainThread]: Partial parsing: added file: homework://models\core\dim_zones.sql
+[0m21:32:40.622415 [debug] [MainThread]: Partial parsing: added file: homework://models\staging\stg_green_tripdata.sql
+[0m21:32:40.622415 [debug] [MainThread]: Partial parsing: added file: homework://models\staging\stg_yellow_tripdata.sql
+[0m21:32:40.623416 [debug] [MainThread]: Partial parsing: added file: homework://models\core\fact_trips.sql
+[0m21:32:40.623416 [debug] [MainThread]: Partial parsing: updated file: homework://models\staging\schema.yml
+[0m21:32:40.624416 [debug] [MainThread]: Partial parsing: deleted file: homework://models\example\my_first_dbt_model.sql
+[0m21:32:40.922414 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `tests` config has been renamed to `data_tests`. Please see
+https://docs.getdbt.com/docs/build/data-tests#new-data_tests-syntax for more
+information.
+[0m21:32:40.923413 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'a9161cdf-138a-4277-88c6-4e225c1e250b', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A24426F490>]}
+[0m21:32:41.181739 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'my_first_dbt_model' in the 'models' section of file 'models\example\schema.yml'
+[0m21:32:41.199658 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.homework.dim_zones' (models\core\dim_zones.sql) depends on a node named 'taxi_zone_lookup' which was not found
+[0m21:32:41.202657 [debug] [MainThread]: Command `dbt run` failed at 21:32:41.202657 after 3.35 seconds
+[0m21:32:41.203656 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2260D7580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2441B8820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2443680D0>]}
+[0m21:32:41.203656 [debug] [MainThread]: Flushing usage events
+[0m21:32:41.223821 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.

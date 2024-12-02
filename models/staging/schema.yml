@@ -8,33 +8,52 @@ sources:  # 声明数据源
       - name: yellow_taxi_trips_in  # 黄色出租车数据表
       - name: green_taxi_trips_in   # 绿色出租车数据表
       - name: fhv_taxi_trips_in     # 网约车数据表
-
+      - name: taxi_zone_lookup    # 地理位置信息表
+models:
   - name: stg_yellow_tripdata
+    description: "暂存黄色出租车数据"
     columns:
       - name: tripid
+        description: "行程ID"
         tests:
-          - unique              # 测试1：确保tripid是唯一的
-          - not_null           # 测试2：确保tripid不为空
+          - unique  # 测试1：确保tripid是唯一的
+          - not_null  # 测试2：确保tripid不为空
       - name: pickup_datetime
+        description: "上车时间"
         tests:
-          - not_null       # 测试3：确保pickup_datetime不为空
-        
+          - not_null  # 测试3：确保pickup_datetime不为空
+
   - name: stg_green_tripdata
+    description: "暂存绿色出租车数据"
     columns:
       - name: tripid
+        description: "行程ID"
         tests:
-          - unique
-          - not_null
+          - unique  # 确保tripid是唯一的
+          - not_null  # 确保tripid不为空
       - name: pickup_datetime
+        description: "上车时间"
         tests:
-          - not_null
-          
-  - name: stg_fhv_tripdata
+          - not_null  # 确保pickup_datetime不为空
+      - name: dropoff_datetime
+        description: "下车时间"
+        tests:
+          - not_null  # 确保dropoff_datetime不为空
+      - name: passenger_count
+        description: "乘客数量"
+        tests:
+          - not_null  # 确保passenger_count不为空
+      - name: trip_distance
+        description: "行程距离"
+        tests:
+          - not_null  # 确保trip_distance不为空
+      - name: fare_amount
+        description: "车费金额"
+        tests:
+          - not_null  # 确保fare_amount不为空 
+  - name: dim_zones
     columns:
-      - name: tripid
+      - name: locationid
         tests:
           - unique
-          - not_null
-      - name: pickup_datetime
-        tests:
           - not_null
