@@ -1,0 +1,195 @@
+[0m16:29:30.052304 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022A6FB87580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022A7279D520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022A7279D3D0>]}
+
+
+============================== 16:29:30.056276 | 22d5dccf-82e5-4b58-9d74-7c9449a469ac ==============================
+[0m16:29:30.056276 [info ] [MainThread]: Running with dbt=1.8.9
+[0m16:29:30.057305 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\杰哥带帅比\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'E:\\程序\\data-engineering-zoomcamp-main\\04-analytics-engineering\\homework\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:29:30.084279 [info ] [MainThread]: dbt version: 1.8.9
+[0m16:29:30.085278 [info ] [MainThread]: python version: 3.9.0
+[0m16:29:30.086276 [info ] [MainThread]: python path: F:\anaconda3\envs\tomato\python.exe
+[0m16:29:30.087278 [info ] [MainThread]: os info: Windows-10-10.0.19041-SP0
+[0m16:29:31.476059 [info ] [MainThread]: Using profiles dir at C:\Users\杰哥带帅比\.dbt
+[0m16:29:31.476059 [info ] [MainThread]: Using profiles.yml file at C:\Users\杰哥带帅比\.dbt\profiles.yml
+[0m16:29:31.477058 [info ] [MainThread]: Using dbt_project.yml file at E:\程序\data-engineering-zoomcamp-main\04-analytics-engineering\homework\dbt_project.yml
+[0m16:29:31.478059 [info ] [MainThread]: adapter type: maxcompute
+[0m16:29:31.479058 [info ] [MainThread]: adapter version: 1.8.0-alpha8
+[0m16:29:31.592059 [info ] [MainThread]: Configuration:
+[0m16:29:31.593061 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:29:31.593061 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m16:29:31.594058 [info ] [MainThread]: Required dependencies:
+[0m16:29:31.595059 [debug] [MainThread]: Executing "git --help"
+[0m16:29:31.698058 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:29:31.699059 [debug] [MainThread]: STDERR: "b''"
+[0m16:29:31.700058 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:29:31.700058 [info ] [MainThread]: Connection:
+[0m16:29:31.701056 [info ] [MainThread]:   project: dataengine_learning
+[0m16:29:31.702058 [info ] [MainThread]:   database: dataengine_learning
+[0m16:29:31.703059 [info ] [MainThread]:   schema: default
+[0m16:29:31.703059 [info ] [MainThread]:   endpoint: https://service.cn-hangzhou.maxcompute.aliyun.com/api
+[0m16:29:31.705060 [info ] [MainThread]: Registered adapter: maxcompute=1.8.0-alpha8
+[0m16:29:32.507585 [debug] [MainThread]: Acquiring new maxcompute connection 'debug'
+[0m16:29:32.739245 [debug] [MainThread]: Using maxcompute connection "debug"
+[0m16:29:32.740245 [debug] [MainThread]: On debug: select 1 as id
+[0m16:29:32.741245 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:29:36.636623 [debug] [MainThread]: MaxCompute adapter: Current instance id is 20241127082935388g7xhzo8idlr
+[0m16:29:36.637620 [debug] [MainThread]: SQL status: OK in 3.897 seconds
+[0m16:29:36.637620 [debug] [MainThread]: MaxCompute adapter: Current instance id is 20241127082935388g7xhzo8idlr
+[0m16:29:36.638619 [debug] [MainThread]: On debug: Close
+[0m16:29:36.639618 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m16:29:36.640618 [info ] [MainThread]: [32mAll checks passed![0m
+[0m16:29:36.642618 [debug] [MainThread]: Command `dbt debug` succeeded at 16:29:36.642618 after 6.65 seconds
+[0m16:29:36.642618 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m16:29:36.643620 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022A6FB87580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022A704EF6D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022A0C708DC0>]}
+[0m16:29:36.644619 [debug] [MainThread]: Flushing usage events
+[0m16:29:36.678807 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m16:24:17.101377 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A796E108B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A799A23970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A799A23AC0>]}
+
+
+============================== 16:24:17.106888 | 32f663b4-e3a5-4954-9e9f-36332f782eb3 ==============================
+[0m16:24:17.106888 [info ] [MainThread]: Running with dbt=1.8.9
+[0m16:24:17.106888 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\杰哥带帅比\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'e:\\程序\\data-engineering-zoomcamp-main\\04-analytics-engineering\\homework\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt ', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m16:24:19.373577 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '32f663b4-e3a5-4954-9e9f-36332f782eb3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7999DD490>]}
+[0m16:24:19.504615 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '32f663b4-e3a5-4954-9e9f-36332f782eb3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A79980ECD0>]}
+[0m16:24:19.506615 [info ] [MainThread]: Registered adapter: maxcompute=1.8.0-alpha8
+[0m16:24:20.312410 [debug] [MainThread]: checksum: 7c9f24cadb9ed71bfad0146ef54df7f5d259c85b535c1ae4260269edc44b8995, vars: {}, profile: , target: dev, version: 1.8.9
+[0m16:24:20.460375 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m16:24:20.460375 [debug] [MainThread]: previous checksum: 7c9f24cadb9ed71bfad0146ef54df7f5d259c85b535c1ae4260269edc44b8995, current checksum: 132857a23e9d07220246854f7763165174ce9b737cfc7867629ace4294e520b1
+[0m16:24:20.461376 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '32f663b4-e3a5-4954-9e9f-36332f782eb3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A79777F070>]}
+[0m16:24:22.018649 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '32f663b4-e3a5-4954-9e9f-36332f782eb3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7B5021E80>]}
+[0m16:24:22.189502 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '32f663b4-e3a5-4954-9e9f-36332f782eb3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7B5048DF0>]}
+[0m16:24:22.190505 [info ] [MainThread]: Found 2 models, 4 data tests, 424 macros
+[0m16:24:22.191505 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '32f663b4-e3a5-4954-9e9f-36332f782eb3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7B5079520>]}
+[0m16:24:22.193509 [info ] [MainThread]: 
+[0m16:24:22.195506 [debug] [MainThread]: Acquiring new maxcompute connection 'master'
+[0m16:24:22.197541 [debug] [ThreadPool]: Acquiring new maxcompute connection 'list_dataengine_learning'
+[0m16:24:22.198542 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:24:23.111208 [debug] [ThreadPool]: MaxCompute adapter: list_schemas: ['default', 'max_dbt']
+[0m16:24:23.112282 [debug] [ThreadPool]: On list_dataengine_learning: Close
+[0m16:24:23.119260 [debug] [ThreadPool]: Acquiring new maxcompute connection 'list_dataengine_learning_default'
+[0m16:24:23.119776 [debug] [ThreadPool]: MaxCompute adapter: list_relations_without_caching: `dataengine_learning`.`default`
+[0m16:24:23.120302 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:24:26.480801 [debug] [ThreadPool]: On list_dataengine_learning_default: Close
+[0m16:24:26.485648 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '32f663b4-e3a5-4954-9e9f-36332f782eb3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7B3912F40>]}
+[0m16:24:26.486209 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m16:24:26.486740 [info ] [MainThread]: 
+[0m16:24:26.491458 [debug] [Thread-2  ]: Began running node model.homework.my_first_dbt_model
+[0m16:24:26.492458 [info ] [Thread-2  ]: 1 of 1 START sql table model default.my_first_dbt_model ........................ [RUN]
+[0m16:24:26.493458 [debug] [Thread-2  ]: Acquiring new maxcompute connection 'model.homework.my_first_dbt_model'
+[0m16:24:26.493458 [debug] [Thread-2  ]: Began compiling node model.homework.my_first_dbt_model
+[0m16:24:26.505457 [debug] [Thread-2  ]: Writing injected SQL for node "model.homework.my_first_dbt_model"
+[0m16:24:26.508458 [debug] [Thread-2  ]: Began executing node model.homework.my_first_dbt_model
+[0m16:24:26.565791 [debug] [Thread-2  ]: Writing runtime sql for node "model.homework.my_first_dbt_model"
+[0m16:24:26.749634 [debug] [Thread-2  ]: Using maxcompute connection "model.homework.my_first_dbt_model"
+[0m16:24:26.750197 [debug] [Thread-2  ]: On model.homework.my_first_dbt_model: 
+  
+    CREATE TABLE IF NOT EXISTS `dataengine_learning`.`default`.`my_first_dbt_model__dbt_tmp`
+    
+    AS (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    )
+    ;
+
+  
+[0m16:24:26.750197 [debug] [Thread-2  ]: Opening a new connection, currently in state init
+[0m16:24:29.576239 [debug] [Thread-2  ]: MaxCompute adapter: Current instance id is 20241129082427202g153aluwhm1
+[0m16:24:29.576808 [debug] [Thread-2  ]: SQL status: OK in 2.826 seconds
+[0m16:24:29.577375 [debug] [Thread-2  ]: MaxCompute adapter: Current instance id is 20241129082427202g153aluwhm1
+[0m16:24:29.781750 [debug] [Thread-2  ]: Using maxcompute connection "model.homework.my_first_dbt_model"
+[0m16:24:29.782307 [debug] [Thread-2  ]: On model.homework.my_first_dbt_model: ALTER TABLE `dataengine_learning`.`default`.`my_first_dbt_model__dbt_tmp`
+            RENAME TO my_first_dbt_model;
+        
+[0m16:24:30.829821 [debug] [Thread-2  ]: MaxCompute adapter: Current instance id is 20241129082429945gvu3bq7i4gg
+[0m16:24:30.830352 [debug] [Thread-2  ]: SQL status: OK in 1.047 seconds
+[0m16:24:30.830883 [debug] [Thread-2  ]: MaxCompute adapter: Current instance id is 20241129082429945gvu3bq7i4gg
+[0m16:24:30.852437 [debug] [Thread-2  ]: On model.homework.my_first_dbt_model: COMMIT
+[0m16:24:31.499996 [debug] [Thread-2  ]: On model.homework.my_first_dbt_model: Close
+[0m16:24:31.502117 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '32f663b4-e3a5-4954-9e9f-36332f782eb3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7971DF760>]}
+[0m16:24:31.503305 [info ] [Thread-2  ]: 1 of 1 OK created sql table model default.my_first_dbt_model ................... [[32mOK[0m in 5.01s]
+[0m16:24:31.504374 [debug] [Thread-2  ]: Finished running node model.homework.my_first_dbt_model
+[0m16:24:31.507062 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:24:31.507583 [debug] [MainThread]: Connection 'list_dataengine_learning' was properly closed.
+[0m16:24:31.507583 [debug] [MainThread]: Connection 'list_dataengine_learning_default' was properly closed.
+[0m16:24:31.508580 [debug] [MainThread]: Connection 'model.homework.my_first_dbt_model' was properly closed.
+[0m16:24:31.508580 [info ] [MainThread]: 
+[0m16:24:31.509580 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 9.31 seconds (9.31s).
+[0m16:24:31.510601 [debug] [MainThread]: Command end result
+[0m16:24:31.552410 [info ] [MainThread]: 
+[0m16:24:31.554410 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:24:31.554410 [info ] [MainThread]: 
+[0m16:24:31.555409 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m16:24:31.556411 [debug] [MainThread]: Command `cli run` succeeded at 16:24:31.556411 after 14.52 seconds
+[0m16:24:31.557448 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A796E108B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7B5048DF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A797302D30>]}
+[0m16:24:31.557448 [debug] [MainThread]: Flushing usage events
+[0m16:24:31.592247 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m15:17:37.763052 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000152118375B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001521444A550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001521444A400>]}
+
+
+============================== 15:17:37.767055 | f08da290-cd1f-4758-b5cd-4c9b67328ee7 ==============================
+[0m15:17:37.767055 [info ] [MainThread]: Running with dbt=1.8.9
+[0m15:17:37.767055 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'E:\\程序\\data-engineering-zoomcamp-main\\04-analytics-engineering\\homework\\logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\杰哥带帅比\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:17:37.792052 [info ] [MainThread]: dbt version: 1.8.9
+[0m15:17:37.793052 [info ] [MainThread]: python version: 3.9.0
+[0m15:17:37.794052 [info ] [MainThread]: python path: F:\anaconda3\envs\tomato\python.exe
+[0m15:17:37.794052 [info ] [MainThread]: os info: Windows-10-10.0.19041-SP0
+[0m15:17:39.162740 [info ] [MainThread]: Using profiles dir at C:\Users\杰哥带帅比\.dbt
+[0m15:17:39.163826 [info ] [MainThread]: Using profiles.yml file at C:\Users\杰哥带帅比\.dbt\profiles.yml
+[0m15:17:39.164740 [info ] [MainThread]: Using dbt_project.yml file at E:\程序\data-engineering-zoomcamp-main\04-analytics-engineering\homework\dbt_project.yml
+[0m15:17:39.165740 [info ] [MainThread]: adapter type: maxcompute
+[0m15:17:39.165740 [info ] [MainThread]: adapter version: 1.8.0-alpha8
+[0m15:17:39.278361 [info ] [MainThread]: Configuration:
+[0m15:17:39.278361 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m15:17:39.279361 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m15:17:39.280361 [info ] [MainThread]: Required dependencies:
+[0m15:17:39.281364 [debug] [MainThread]: Executing "git --help"
+[0m15:17:39.374873 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:17:39.374873 [debug] [MainThread]: STDERR: "b''"
+[0m15:17:39.375875 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:17:39.376901 [info ] [MainThread]: Connection:
+[0m15:17:39.377873 [info ] [MainThread]:   project: dataengine_learning
+[0m15:17:39.378875 [info ] [MainThread]:   database: dataengine_learning
+[0m15:17:39.379874 [info ] [MainThread]:   schema: default
+[0m15:17:39.380874 [info ] [MainThread]:   endpoint: https://service.cn-hangzhou.maxcompute.aliyun.com/api
+[0m15:17:39.381874 [info ] [MainThread]: Registered adapter: maxcompute=1.8.0-alpha8
+[0m15:17:40.128018 [debug] [MainThread]: Acquiring new maxcompute connection 'debug'
+[0m15:17:40.504785 [debug] [MainThread]: Using maxcompute connection "debug"
+[0m15:17:40.504785 [debug] [MainThread]: On debug: select 1 as id
+[0m15:17:40.505784 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:17:43.323582 [debug] [MainThread]: MaxCompute adapter: Current instance id is 20241202071743557g78jld9tjxh5
+[0m15:17:43.323582 [debug] [MainThread]: SQL status: OK in 2.819 seconds
+[0m15:17:43.324581 [debug] [MainThread]: MaxCompute adapter: Current instance id is 20241202071743557g78jld9tjxh5
+[0m15:17:43.325582 [debug] [MainThread]: On debug: Close
+[0m15:17:43.325582 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m15:17:43.326582 [info ] [MainThread]: [32mAll checks passed![0m
+[0m15:17:43.328582 [debug] [MainThread]: Command `dbt debug` succeeded at 15:17:43.328582 after 5.64 seconds
+[0m15:17:43.329605 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m15:17:43.329605 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000152118375B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001522E32AAF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001522E3D5610>]}
+[0m15:17:43.330582 [debug] [MainThread]: Flushing usage events

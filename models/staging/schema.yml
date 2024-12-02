@@ -1,0 +1,40 @@
+version: 2  # dbt的配置版本号
+
+sources:  # 声明数据源
+  - name: nyc_taxi  # 源的名称，在模型中引用时使用
+    database: dataengine_learning  # 数据库名称
+    schema: default     # schema名称
+    tables:  # 声明具体的表
+      - name: yellow_taxi_trips_in  # 黄色出租车数据表
+      - name: green_taxi_trips_in   # 绿色出租车数据表
+      - name: fhv_taxi_trips_in     # 网约车数据表
+
+  - name: stg_yellow_tripdata
+    columns:
+      - name: tripid
+        tests:
+          - unique              # 测试1：确保tripid是唯一的
+          - not_null           # 测试2：确保tripid不为空
+      - name: pickup_datetime
+        tests:
+          - not_null       # 测试3：确保pickup_datetime不为空
+        
+  - name: stg_green_tripdata
+    columns:
+      - name: tripid
+        tests:
+          - unique
+          - not_null
+      - name: pickup_datetime
+        tests:
+          - not_null
+          
+  - name: stg_fhv_tripdata
+    columns:
+      - name: tripid
+        tests:
+          - unique
+          - not_null
+      - name: pickup_datetime
+        tests:
+          - not_null
